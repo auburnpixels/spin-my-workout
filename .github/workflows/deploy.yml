@@ -72,5 +72,5 @@ jobs:
       - name: Push to `Spin My Workout`
         uses: dokku/github-action@master
         with:
-          git_remote_url: 'ssh://dokku@137.184.34.132:22/spin-my-workout'
+          git_remote_url: 'ssh://dokku@24.199.123.22:22/spin-my-workout'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
