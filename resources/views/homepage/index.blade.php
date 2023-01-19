@@ -3,43 +3,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/favicons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('images/favicons/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('images/favicons/safari-pinned-tab.svg') }}" color="#5bbad5">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <title>The future of on-demand sales talent - Spin My Workout</title>
+    <title>Music mix tailored to your workout - Spin My Workout</title>
 
-    <meta name="description" content="Spin My Workout is the future of on-demand sales talent. The way growing companies connect with top-tier sales talent and scale without the risk.">
+    <meta name="description" content="Get a personalised continuous music mix tailored to your workout that includes only your chosen artists.">
 
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="The future of on-demand sales talent - Spin My Workout" />
-    <meta property="og:description" content="Spin My Workout is the future of on-demand sales talent. The way growing companies connect with top-tier sales talent and scale without the risk." />
-    <meta property="og:url" content="https://sendSpin My Workout.com" />
+    <meta property="og:title" content="Music mix tailored to your workout - Spin My Workout" />
+    <meta property="og:description" content="Get a personalised continuous music mix tailored to your workout that includes only your chosen artists." />
+    <meta property="og:url" content="https://spinmyworkout.com" />
     <meta property="og:site_name" content="Spin My Workout" />
 
-    <meta name="twitter:title" content="The future of on-demand sales talent - Spin My Workout">
-    <meta name="twitter:description" content="Spin My Workout is the future of on-demand sales talent. The way growing companies connect with top-tier sales talent and scale without the risk.">
-    <meta property="og:url" content="https://sendSpin My Workout.com" />
+    <meta name="twitter:title" content="Music mix tailored to your workout - Spin My Workout">
+    <meta name="twitter:description" content="Get a personalised continuous music mix tailored to your workout that includes only your chosen artists.">
+    <meta property="og:url" content="https://spinmyworkout.com" />
     <meta name="twitter:creator" content="@sendSpin My Workout">
     <meta name="twitter:card" content="summary">
 </head>
 
     <body>
-        <header class="relative bg-[#fff]">
-            <nav class="">
-                <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center py-4">
-                    <div class="relative flex items-center justify-between h-16">
-                        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                            <div class="flex-shrink-0 flex items-center">
-                                <img src="images/logo.png" alt="Spin My Workout" class="h-16" />
-                            </div>
-                        </div>
-                    </div>
+{{--        <header class="relative bg-[#fff]">--}}
+{{--            <nav class="">--}}
+{{--                <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center py-4">--}}
+{{--                    <div class="relative flex items-center justify-between h-16">--}}
+{{--                        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">--}}
+{{--                            <div class="flex-shrink-0 flex items-center">--}}
+{{--                                <img src="images/logo.png" alt="Spin My Workout" class="h-16" />--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                     <!--                <div class="hidden lg:flex lg:items-center md:space-x-6">-->
                     <!--                    <a href="/features" class="text-lg font-medium text-black">Features</a>-->
@@ -56,7 +56,7 @@
                     <!--                <div class="block lg:hidden" @click="showMobileMenu = !showMobileMenu">-->
                     <!--                    <icon name="menu" class-name="cursor-pointer text-pakapou-primary h-8 w-8"></icon>-->
                     <!--                </div>-->
-                </div>
+{{--                </div>--}}
 
                 <!--            <div v-show="showMobileMenu" class="z-50 flex flex-col lg:hidden absolute drop-shadow w-full bg-white">-->
                 <!--                <a href="/features" class="px-4 py-2 text-lg font-medium text-black">Features</a>-->
@@ -70,38 +70,157 @@
                 <!--                <a href="/register" class="inline-flex items-center px-4 py-2 border border-transparent text-lg font-medium text-black mb-4 mr-4 ml-4 rounded-full bg-[#F5F5F5]">Start a raffle website</a>-->
                 <!--            </div>-->
 
-            </nav>
-        </header>
+{{--            </nav>--}}
+{{--        </header>--}}
 
         <main>
+
+            <div class="rounded-full right-4 z-50 fixed bottom-8">
+                <a href="#request-your-mix" class="bg-[#009EE0] py-4 px-8 text-[#fff] text-base rounded-full mb-10">Request your mix</a>
+            </div>
+
             <section class="lg:overflow-hidden bg-[#fff]">
                 <div class="mx-auto max-w-7xl lg:px-8 py-10 lg:py-16">
-                    <div class="max-w-7xl px-4 sm:px-6 lg:px-0 text-left flex flex-col lg:flex-row justify-between relative items-center">
-                        <div class="w-8/12 pr-10">
-                            <h1 class="text-4xl leading-none font-extrabold md:text-5xl lg:text-6xl xl:text-[72px] mb-5 lg:mb-10 max-w-4xl">
-                                <span class="text-[#009EE0]">Spin</span> my workout. <span class="text-xl rounded-xl bg-[#009EE0] py-1 px-2 lg:py-2 lg:px-4 text-white">Beta</span>
+                    <div class="max-w-7xl px-4 sm:px-6 lg:px-0 text-left flex flex-col justify-between relative items-center">
+                        <div class="w-full md:w-7/12 mb-10">
+                            <div class="mb-5">
+                                <span class="text-xl rounded-xl bg-[#009EE0] py-1 px-2 lg:py-2 lg:px-4 text-white">Beta</span>
+                                <a href="#beta" class="ml-2 underline text-base">What does this mean?</a>
+                            </div>
+
+                            <h1 class="text-4xl leading-none font-extrabold md:text-5xl lg:text-6xl xl:text-[72px] mb-5 lg:mb-10 max-w-4xl flex">
+                                <span class="text-[#009EE0] mr-2">Spin</span> my workout.
                             </h1>
                             <p class="text-base sm:text-xl lg:text-lg xl:text-2xl">
                                 Get a personalised continuous music mix tailored to your workout that includes only your chosen artists.
                             </p>
+                            <div class="mt-10 mb-10">
+                                <a href="#how-it-works" class="bg-[#009EE0] py-4 px-8 rounded-full text-[#fff] text-base md:text-lg mr-2">How it works</a>
+                                <a href="#faqs" class="border-2 border-[#009EE0] py-4 px-8 rounded-full text-[#009EE0] text-base md:text-lg">FAQ's</a>
+                            </div>
                         </div>
-                        <div class="w-4/12">
-                            <form class="bg-[#f0faff] p-5 md:p-10 rounded-xl">
-                                <div class="flex flex-col mb-5">
-                                    <label class="mb-2 font-bold">Email address</label>
-                                    <input type="email"  class="w-full p-2 rounded-lg border border-[#f0faff]" />
+
+                        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-10" id="request-your-mix">
+
+                            <div class="bg-[#f0faff] p-5 md:p-10 rounded-xl flex flex-col" action="/" method="post">
+                                <h2 class="text-2xl tracking-tight font-extrabold lg:text-4xl mb-5 max-w-4xl">Request your mix.</h2>
+
+                                @csrf
+
+                                @if (session()->has('message'))
+                                    <p class="text-sm mb-5 font-bold p-4 bg-[#e2f6fe] rounded-xl">{{ session()->get('message') }}</p>
+                                @endif
+
+                                <p class="text-sm mb-5 font-bold pb-5 border-b">While we are in first stage of beta testing, we will only accept {{ $limitSetting->value }} mix submissions. All we ask is that if you are one of the lucky ones, you provide us with honest feedback.</p>
+
+                                @if ($setting->value)
+                                    <form class="bg-[#f0faff] flex flex-col" action="/" method="post">
+                                        @csrf
+
+                                        <div class="">
+                                            <div class="flex flex-col mb-5">
+                                                <label class="mb-2 font-extrabold">Email address *</label>
+                                                <input type="email" required name="email" class="w-full p-2 rounded-lg border border-[#E5E7EB]" />
+                                            </div>
+
+                                            <div class="flex flex-col mb-5">
+                                                <label class="mb-2 font-extrabold">Workout *</label>
+                                                <textarea
+                                                    required
+                                                    name="workout"
+                                                    rows="8"
+                                                    class="w-full p-2 rounded-lg border border-[#E5E7EB]"
+                                                    placeholder="Examples:&#10;- 30 minutes continuous workout.&#10;- 5 minutes warmup. 35 minutes of 1 minute high intensity and 4 minute low intensity, repeated for 30 minutes. 5 minute warm down.&#10;- 10 minutes gradual warmup. 2 minute high intensity and then 3 minute low intensity, repeated for 40 minutes. 10 minute sprint. 5 minute warm down"
+                                                ></textarea>
+                                            </div>
+
+                                            <div class="flex flex-col">
+                                                <label class="mb-2 font-extrabold">Music artists (max 3) *</label>
+                                                <input
+                                                    required
+                                                    name="artists"
+                                                    class="w-full p-2 rounded-lg border border-[#E5E7EB]"
+                                                    placeholder="Elvis, Chase and Status, Oasis"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between items-center">
+                                            <div class="text-[#009EE0] font-semibold text-xl">
+                                                {{ $requested }}/{{ $limitSetting->value }} requested
+                                            </div>
+                                            <button type="submit" class="bg-[#009EE0] mt-5 py-2 px-4 rounded-full text-[#fff] text-base mr-2">Send</button>
+                                        </div>
+                                    </form>
+                                @else
+
+                                    <p class="text-base font-bold">
+                                        The first stage of beta testing has ended but will be opening again very soon.
+                                        <br /><br />
+                                        While we are learning and perfecting our service to provide the best workout music mixes
+                                        we can, why don't you <a href="#be-in-the-loop" class="text-[#009EE0] underline">stay in the loop</a> by subscribing to our newsletter.</p>
+                                @endif
+                            </div>
+
+                            <div>
+                                <div>
+                                    <div>
+                                        <div class="flex flex-col gap-4 bg-[#f0faff] p-5 md:p-10 rounded-xl mb-5" id="be-in-the-loop">
+                                            <h2 class="text-2xl tracking-tight font-extrabold lg:text-4xl max-w-4xl">Be in the loop.</h2>
+                                            <p class="text-sm font-bold pb-5 border-b">Keep up to date with all things Spin My Workout as we go through beta and into the future.</p>
+
+                                            <form class="mb-0" method="post" action="{{ route('subscribe') }}">
+                                                @csrf
+
+                                                @if (session()->has('subscribe_message'))
+                                                    <p class="text-sm mb-5 font-bold p-4 bg-[#e2f6fe] rounded-xl">{{ session()->get('subscribe_message') }}</p>
+                                                @endif
+
+                                                <div class="flex flex-col">
+                                                    <label class="mb-2 font-extrabold">Email address *</label>
+                                                    <input type="email" name="email" class="w-full p-2 rounded-lg border border-[#E5E7EB]" required />
+                                                </div>
+
+                                                <div class="flex justify-end">
+                                                    <button type="submit" class="bg-[#009EE0] py-2 px-4 rounded-full text-[#fff] text-base mt-2">Subscribe</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="flex flex-col mb-5">
-                                    <label class="mb-2 font-bold">Workout</label>
-                                    <textarea name="workout" class="w-full p-2 rounded-lg border"></textarea>
-                                </div>
+                                <div>
+                                    <div>
+                                        <div class="flex flex-col gap-4 bg-[#f0faff] p-5 md:p-10 rounded-xl" id="how-it-works">
+                                            <h2 class="text-2xl tracking-tight font-extrabold lg:text-4xl max-w-4xl">How it works.</h2>
 
-                                <div class="flex flex-col">
-                                    <label class="mb-2 font-bold">Music artists</label>
-                                    <textarea name="workout" class="w-full p-2 rounded-lg border"></textarea>
+                                            <div class="grid grid-cols-1 gap-4 ">
+                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-center">
+                                                    <span class="text-[#009EE0] text-xl mr-4 bg-[#f0faff] p-4 rounded-xl">1</span>
+                                                    <p class="text-base">Enter the email address where you want your mix to be sent.</p>
+                                                </div>
+
+                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-center">
+                                                    <span class="text-[#009EE0] text-xl mr-4 bg-[#f0faff] p-4 rounded-xl">2</span>
+                                                    <p class="text-base">Enter your workout. The service works best when you have a continuous workout with no breaks, but you can see some examples on the <a href="#request-your-mix" class="text-[#009EE0] underline">request form</a>.</p>
+                                                </div>
+
+                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-center">
+                                                    <span class="text-[#009EE0] text-xl mr-4 bg-[#f0faff] p-4 rounded-xl">3</span>
+                                                    <p class="text-base">Enter up to three music artists to feature in your music mix.</p>
+                                                </div>
+
+                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-center">
+                                                    <span class="text-[#009EE0] text-xl mr-4 bg-[#f0faff] p-4 rounded-xl">4</span>
+                                                    <p class="text-base">Wait for us to send you your music mix via email. We will make every effort to get it to you as soon as possible, but we hope to finish it within 7 days.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -148,41 +267,20 @@
             <!--            </div>-->
             <!--        </section>-->
 
-            <section>
-                <div class="mx-auto px-4 sm:px-6 lg:px-6 max-w-7xl">
-                    <div class="flex flex-col lg:flex-row gap-4 lg:gap-16 xl:gap-24 items-center bg-[#f0faff] p-5 md:p-10 lg:p-20 rounded-xl">
-                        <div>
-                            <h2 class="text-4xl tracking-tight font-extrabold lg:text-6xl mb-5 max-w-4xl">How it works.</h2>
-
-                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-10 mt-10">
-                                <div class="p-5 md:p-10 rounded-lg bg-[#fff]">
-                                    <span class="text-[#009EE0] text-4xl">1</span>
-                                    <p class="mt-5 text-xl">Enter your workout.</p>
-                                </div>
-
-                                <div class="p-5 md:p-10 rounded-lg bg-[#fff]">
-                                    <span class="text-[#009EE0] text-4xl">2</span>
-                                    <p class="mt-5 text-xl">Enter your three favourite artists.</p>
-                                </div>
-
-                                <div class="p-5 md:p-10 rounded-lg bg-[#fff]">
-                                    <span class="text-[#009EE0] text-4xl">3</span>
-                                    <p class="mt-5 text-xl">Wait for an email with your personalised mix.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mx-auto max-w-7xl lg:px-8 py-10 lg:py-20">
+            <section class="mx-auto max-w-7xl lg:px-8 py-10" id="faqs">
                 <div class="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
-                    <h2 class="text-4xl tracking-tight font-extrabold lg:text-6xl mb-10 leading-none">FAQs.</h2>
+                    <h2 class="text-3xl tracking-tight font-extrabold lg:text-5xl mb-10 leading-none">FAQs.</h2>
 
                     <div class="max-w-5xl">
+                        <div class="mb-10" id="beta">
+                            <h4 class="text-xl tracking-tight font-extrabold lg:text-3xl mb-5 leading-none">You are currently in beta, what does this mean?</h4>
+                            <p class="text-lg lg:text-xl">
+                                We are a brand new service in beta testing to validate our concept. For the first stage of beta, we will only accept {{ $limitSetting->value }} users to test our service. If you are one of the lucky beta testers, we only ask for your honest feedback and limit you to one mix per email during this time.
+                            </p>
+                        </div>
                         <div class="mb-10">
                             <h4 class="text-xl tracking-tight font-extrabold lg:text-3xl mb-5 leading-none">Where did this idea come from?</h4>
-                            <p class="text-xl">
+                            <p class="text-lg lg:text-xl">
                                 This concept arose from my desire for something similar. Cycling is my preferred cardio exercise, and I have a workout routine that I follow and a playlist that I listen to. But there were two things that bothered me about this playlist.
                                 <br /><br />
                                 The first issue was the time between songs. With a brief pause, one song ends and another begins.
@@ -195,24 +293,17 @@
 
                         <div class="mb-10">
                             <h4 class="text-xl tracking-tight font-extrabold lg:text-3xl mb-5 leading-none">What will my mix sound like?</h4>
-                            <p class="text-xl">Your workout music mix will be a continuous mix with no breaks, featuring your favourite artists, lasting as long as your workout and mixed by a real DJ.</p>
+                            <p class="text-lg lg:text-xl">Your workout music mix will be a continuous mix with no breaks, featuring your favourite artists, lasting the duration of your workout, and mixed by a professional DJ. It will also be tailored to your workout, including low and high tempo music based on the information about your workout you provide.</p>
                         </div>
 
                         <div class="mb-10">
                             <h4 class="text-xl tracking-tight font-extrabold lg:text-3xl mb-5 leading-none">How will I receive my mix?</h4>
-                            <p class="text-xl">Your mix will be sent to you via email.</p>
+                            <p class="text-lg lg:text-xl">Your mix will be emailed to you and will include an .mp3 file.</p>
                         </div>
 
                         <div class="mb-10">
                             <h4 class="text-xl tracking-tight font-extrabold lg:text-3xl mb-5 leading-none">How will I long will it take for me to receive my mix?</h4>
-                            <p class="text-xl">We expect to email your mix within 7 days.</p>
-                        </div>
-
-                        <div class="mb-10">
-                            <h4 class="text-xl tracking-tight font-extrabold lg:text-3xl mb-5 leading-none">You are currently in beta, what does this mean?</h4>
-                            <p class="text-xl">
-                                We are a brand new service that is currently in beta to validate our concept. We will only accept 50 users to test our service in beta mode for the time being. If you are one of the lucky beta testers, we only ask for your honest feedback.
-                            </p>
+                            <p class="text-lg lg:text-xl">We will try to get it to you as soon as possible, but we hope to complete it within 7 days.</p>
                         </div>
                     </div>
                 </div>
@@ -283,7 +374,11 @@
                 <!--            </div>-->
 
                 <!--            <div class="w-full pt-10 border-t border-[#F5F5F5]">-->
-                <p class="text-base  text-center">&copy; 2023 Spin My Workout. All rights reserved.</p>
+                <div>
+                    <a href="mailto:hello@spinmyworkout.com" class=" text-center block mb-2">hello@spinmyworkout.com</a>
+                    <p class="text-base text-center">&copy; 2023 Spin My Workout. All rights reserved.</p>
+                </div>
+
                 <!--            </div>-->
 
                 <!--            </div>-->
