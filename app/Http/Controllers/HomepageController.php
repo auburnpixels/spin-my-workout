@@ -81,14 +81,14 @@ class HomepageController extends Controller
         $mailchimp = new \MailchimpMarketing\ApiClient();
 
         $mailchimp->setConfig([
-            'apiKey' => '98cb872b03b8a203c0750762c747b25c-us18',
+            'apiKey' => config('services.mailchimp.key'),
             'server' => 'us18'
         ]);
 
         $member = $mailchimp->searchMembers->search($validated['email']);
 
         if ($member->exact_matches->total_items == 0) {
-            $mailchimp->lists->addListMember("36de736df6", [
+            $mailchimp->lists->addListMember(config('services.mailchimp.list'), [
                 "email_address" => $validated['email'],
                 "status" => "subscribed",
             ]);
