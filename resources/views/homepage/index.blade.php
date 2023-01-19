@@ -82,9 +82,9 @@
             <section class="lg:overflow-hidden bg-[#fff]">
                 <div class="mx-auto max-w-7xl lg:px-8 py-10 lg:py-16">
                     <div class="max-w-7xl px-4 sm:px-6 lg:px-0 text-left flex flex-col justify-between relative items-center">
-                        <div class="w-full md:w-7/12 mb-10">
+                        <div class="w-full md:w-7/12 mb-5 md:mb-10">
                             <div class="mb-5">
-                                <span class="text-xl rounded-xl bg-[#009EE0] py-1 px-2 lg:py-2 lg:px-4 text-white">Beta</span>
+                                <span class="text-lg md:text-xl rounded-full bg-[#009EE0] py-2 px-4 text-white">Beta</span>
                                 <a href="#beta" class="ml-2 underline text-base">What does this mean?</a>
                             </div>
 
@@ -195,22 +195,22 @@
                                             <h2 class="text-2xl tracking-tight font-extrabold lg:text-4xl max-w-4xl">How it works.</h2>
 
                                             <div class="grid grid-cols-1 gap-4 ">
-                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-center">
+                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-start">
                                                     <span class="text-[#009EE0] text-xl mr-4 bg-[#f0faff] p-4 rounded-xl">1</span>
                                                     <p class="text-base">Enter the email address where you want your mix to be sent.</p>
                                                 </div>
 
-                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-center">
+                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-start">
                                                     <span class="text-[#009EE0] text-xl mr-4 bg-[#f0faff] p-4 rounded-xl">2</span>
                                                     <p class="text-base">Enter your workout. The service works best when you have a continuous workout with no breaks, but you can see some examples on the <a href="#request-your-mix" class="text-[#009EE0] underline">request form</a>.</p>
                                                 </div>
 
-                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-center">
+                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-start">
                                                     <span class="text-[#009EE0] text-xl mr-4 bg-[#f0faff] p-4 rounded-xl">3</span>
                                                     <p class="text-base">Enter up to three music artists to feature in your music mix.</p>
                                                 </div>
 
-                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-center">
+                                                <div class="p-4 rounded-lg bg-[#fff] flex flex-row items-start">
                                                     <span class="text-[#009EE0] text-xl mr-4 bg-[#f0faff] p-4 rounded-xl">4</span>
                                                     <p class="text-base">Wait for us to send you your music mix via email. We will make every effort to get it to you as soon as possible, but we hope to finish it within 7 days.</p>
                                                 </div>
@@ -267,7 +267,7 @@
             <!--            </div>-->
             <!--        </section>-->
 
-            <section class="mx-auto max-w-7xl lg:px-8 py-10" id="faqs">
+            <section class="mx-auto max-w-7xl lg:px-8 py-5 md:py-10" id="faqs">
                 <div class="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
                     <h2 class="text-3xl tracking-tight font-extrabold lg:text-5xl mb-10 leading-none">FAQs.</h2>
 
